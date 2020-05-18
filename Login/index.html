@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Sign in</title>
+</head>
+<style>
+    .card{
+        top: 170px;
+    }
+</style>
+<body>
+
+    <div class="container ">
+        <div class="row ">
+            <aside class="col-md-4 offset-md-4" >
+            <div class="card shadow " >
+            <article class="card-body">
+
+                <a href="" class="float-right btn btn-outline-primary">Sign up</a>
+                <h4 class="card-title mb-4 mt-1">Sign in</h4>
+
+                <form>
+
+                    <div class="form-group">
+                        <label>Seu Email</label>
+                        <input class="form-control" required placeholder="Jose_Gritz@gmail.com" type="email" name="email" id="txt">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Sua Senha</label>
+                        <input class="form-control" required placeholder="******" type="password" name="senha" id="txt1">
+                    </div> <br>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block" value="Verificar" onclick="verificar()"> Login  </button>
+                    </div>   
+
+                </form>
+
+            </article>
+        </div>
+            </aside>
+     </div>
+    </div>
+
+
+</body>
+</html>
+
+    
+    
+    
+
+        <script>
+            function verificar(){
+                var txtv = window.document.querySelector('input#txt')   // var "txtv" pegando informações que usuario digitar no email
+                var txtw = window.document.querySelector('input#txt1')  // var "txt1" pegando informações que usuario digitar na senh  
+                var email = (txtv.value)                            // Transforma  "txtv" em var email
+                var senha = (txtw.value)                           // Transforma  "txtw" em var senha
+                
+
+                // se variavel email for igual a zero imprimi na tela um alerta de  Email não informado!!
+                if (email.length == 0 ){                            
+                    alert("Email não informado!!")
+                    }
+                
+                // se variavel senha for igual a zero imprimi na tela um alerta de  Senha não informado!!
+                /*if (senha.length == 0 ){
+                    alert("Senha não informado!")
+                }
+                // se senha for maior que 1 e menor que 6 imprime alerta!
+                if (senha.length >=1 && senha.length <=6)
+                    alert("Senha menor de 6 digitos!")*/
+
+                if (senha.length <= 7){
+                    alert("senha curta")
+                }
+            
+            }
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+    </body>
+</html>
