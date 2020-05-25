@@ -7,7 +7,7 @@ const auth = require('../middleware/auth');
 // logar no sistema
 exports.getLogar =  async (req, res, next) => {
     try {
-        return res.send('logado');
+        return res.render('morador/_index');
     } catch (err) {
         next(err);
     }
@@ -17,11 +17,11 @@ exports.postLogar =  async (req, res, next) => {
     try {
         const resultado = await Morador.validarEntrada(req.body);
         if(!resultado) {
-            return res.send('morador não existe');
+            return res.render('morador/_index'); 
         }
-        if(!await cript.compare(req.body.senha, resultado.senha)) {
-            if(!await cript.compare(req.body.senha, resultado.senha1)){
-                return res.send('senha incorreta');
+        if(!await cript.compare(req.body.senha, resultado.senha1)) {
+            if(!await cript.compare(req.body.senha, resultado.senha2)){
+                return res.render('morador/_index');
             }
             else{
                 console.log('perigo meu parceiro');
@@ -30,17 +30,28 @@ exports.postLogar =  async (req, res, next) => {
 
         const token = await auth.gerarToken( { resultado });
         storage.setInLocal('morador', token);
-        return res.send('pode entrar')
+        console.log("entrando normal");
+        return res.redirect('/');
+    } catch (err) {
+        next(err);
+    }
+}
+
+exports.getDeslogar = async (req, res, next) => {
+    try {
+       await storage.removeLocal('morador');
+       return res.redirect('/');
     } catch (err) {
         next(err);
     }
 }
 
 
-// criar morador
+
+// criar funcionario
 exports.getCriar =  async (req, res, next) => {
     try {
-        return res.send('morador criado');
+        return res.render('register/_index');
     } catch (err) {
         next(err);
     }
@@ -50,14 +61,22 @@ exports.postCriar =  async (req, res, next) => {
     try {
        let resultado = await Morador.validarRegistro(req.body);
        if(!resultado){
-           let Morador = await Morador.criar(req.body);
-           return res.send('criado morador');
+           let morador = await Morador.criar(req.body);
+           return res.render('register/_index');
        } else {
            console.log('morador ja existe');
-           return res.send('tentar novemente');
+           return res.redirect('criar');
        }
     } catch (err) {
         next(err);
     }
 }
 
+exports.buscarTodos = async (req, res, next) => {
+    try {
+        const todos = await Morador.buscarTodos();
+        return res.json(todos);
+    } catch (err) {
+        next(err);
+    }
+}

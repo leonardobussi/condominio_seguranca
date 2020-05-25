@@ -1,31 +1,31 @@
 const smc = require('simple-mongoose-creator');
 
 smc.smc('morador', {
-    nickname: {
+    nome: {
         type: String,
         required: true,
         trim: true,
     },
-    nome: {
+    nickname: {
         type: String,
-        require: true,
-        trim: true 
+        required: true,
+        trim: true
     },
     numero: {
         type: Number,
-        required: false,
+        required: true,
             
     },
     bloco: {
         type: String,
-        required: false, 
+        required: true, 
     },
-    senha: {
+    senha1: {
         type: String,
         required: true,
         trim: true, 
     },
-    senha1: {
+    senha2: {
         type: String,
         required: true,
         trim: true, 

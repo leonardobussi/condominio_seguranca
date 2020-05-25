@@ -13,12 +13,14 @@ app.set('views', 'views');
 app.use(express.static('public'));
 
 const morador_route = require('../src/routes/morador');
+const adm_route = require('../src/routes/adm');
 
 app.use('/', morador_route);
+app.use('/adm', adm_route);
 
-app.use('/', (req, res) => {
-   return  res.redirect('/logar'); 
-});
+/*app.use('/', (req, res) => {
+   return  res.redirect('/'); 
+}); */
 
 
 module.exports = app;

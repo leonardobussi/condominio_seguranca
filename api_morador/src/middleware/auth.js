@@ -7,8 +7,7 @@ exports.autorizar = async (req, res, next) => {
     try {
         const token = await storage.getInLocal('login');
         if(!token){
-            //;
-            return res.send('permissao negada');
+            return res.redirect('/adm/logar');   //send('permissao negada');
 
         }
         return next();

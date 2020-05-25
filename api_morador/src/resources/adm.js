@@ -1,31 +1,29 @@
-require('../models/morador');
+require('../models/adm');
+
 const mongoose = require('mongoose');
-const modelo =  mongoose.model('morador');
+
 const cript = require('bcrypt');
 const salt = 10;
 
+const modelo =  mongoose.model('adm');
 
-class Morador  {
-
+class Adm  {
     static async criar(dados){
-        let { senha1, senha2 } = dados;
-        const hash = await cript.hash(senha1, salt);
-        const hash1 = await cript.hash(senha2, salt); // (senha, salt) para (senha1, salt) 
-        senha1 = hash;
-        senha2 = hash1; 
-        dados.senha1 = senha1;
-        dados.senha2 = senha2;
+        let { senha } = dados;
+        const hash = await cript.hash(senha, salt);
+        senha = hash;
+        dados.senha = senha;
         return await new  modelo(dados).save();
     }
     static async  validarRegistro(dados) {
-        let { nickname } = dados;
-        let morador = await modelo.findOne({nickname});
-        return morador;
+        let { email } = dados;
+        let adm = await modelo.findOne({email});
+        return adm;
     }
     static async  validarEntrada(dados) {
-        let { nickname } = dados;
-        let morador = await modelo.findOne({nickname});
-        return morador;
+        let { email } = dados;
+        let adm = await modelo.findOne({email});
+        return adm;
     }
     static async  buscarTodos() {
         return await modelo.find({});
@@ -41,4 +39,4 @@ class Morador  {
     }
 }
 
-module.exports = Morador;
+module.exports = Adm;
