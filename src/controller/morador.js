@@ -3,35 +3,50 @@ const cript = require('bcrypt');
 const storage = require('localtoken');
 const auth = require('../middleware/auth');
 
+const flash = require('connect-flash')
+
+
+
 
 // logar no sistema
 exports.getLogar =  async (req, res, next) => {
     try {
-        return res.render('morador/_index');
+        return res.render('morador/_index', {danger: " "});
     } catch (err) {
         next(err);
     }
 }
 
+
+
 exports.postLogar =  async (req, res, next) => {
     try {
         const resultado = await Morador.validarEntrada(req.body);
         if(!resultado) {
-            return res.render('morador/_index'); 
+            console.log("Email Incorreta");
+        
+            //return res.render('morador/_index'); 
+            return res.render('morador/_index', {danger: "E-mail ou Senha inválido"}); 
         }
         if(!await cript.compare(req.body.senha, resultado.senha1)) {
+            console.log("senha errada");
             if(!await cript.compare(req.body.senha, resultado.senha2)){
-                return res.render('morador/_index');
+                
+                return res.render('morador/_index', {danger: "E-mail ou Senha inválido"});
+                
             }
             else{
                 console.log('perigo meu parceiro');
+                //return res.render('morador/_index');
+               
             }
         }
-
+       
         const token = await auth.gerarToken( { resultado });
         storage.setInLocal('morador', token);
         console.log("entrando normal");
-        return res.redirect('/');
+        //return res.send("bem vindo");
+        return res.redirect('/up');
     } catch (err) {
         next(err);
     }

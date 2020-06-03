@@ -4,28 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Sign in</title>
+    <title>CondSystem</title>
 </head>
 <style>
     .card{
         top: 170px;
     }
-    
+    .alert {
+    width: 100%;
+    background-color: rgb(243, 148, 148);
+    /*padding: 5px;*/
+    padding: 0 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
 </style>
 <body>
-
+    
     <div class="container ">
         <div class="row ">
             <aside class="col-md-4 offset-md-4" >
+                
             <div class="card shadow " >
+                <% if (danger == undefined || danger == null ){
+                    danger = " "
+                }%>
+                <h3 id="alert" class="alert" > <%= danger %></h3>
             <article class="card-body">
                 <h4 class="card-title mb-4 mt-1">Sign in</h4>
 
                 <form method="POST" enctype="application/x-www-form-urlencoded">
 
                     <div class="form-group">
-                        <label>Nickname</label>
-                        <input class="form-control" autocomplete="off"  required placeholder="Jose_23" type="text" name="nickname" id="txt">
+                        <label>Seu Email</label>
+                        <input class="form-control" autocomplete="off"  required placeholder="Jose_Gritz@gmail.com" type="email" name="email" id="txt">
                     </div>
                     
                     <div class="form-group">

@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+body {
+    background-color: #eee;
+}
+.conteiner {
+    margin-top: 100px;
+    padding: 0 30%;
+}
+.card {
+    padding: 5px 0 0 0;
+    height: 400px;
+    width: 100%;
+    background-color: #ccc;
+    box-shadow: 0 0px 0 0px rgba(0, 0, 0, 0.74),
+                0px 0 2px 0 rgba(0, 0, 0, 0.74);
+}
+.card h1 {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(75, 75, 75);
+}
+.contador {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 150px;
+}
+.loading {
+    margin-top: 50px;
+    padding: 0 10%;
+    height: 20px;
+    
+
+}
+.load {
+    padding: 0 5px;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    background-size: 50% 50%;
+    animation: back 2s ease-in-out 0.5s infinite;
+    background-image: linear-gradient(to right, rgb(120, 16, 126), rgb(225, 9, 236));
+}
+@keyframes back {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position:100% 0;
+    }
+    100%{
+        background-position: 0;
+    }
+}

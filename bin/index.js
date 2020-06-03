@@ -1,10 +1,15 @@
 const express = require('express');
-//const expressLayouts = require('express-ejs-layouts');
 const bp = require('body-parser');
 const app = express();
 
-app.use(bp.json({limit: '10mb'}));
+
+
+
+
+
+app.use(bp.json());
 app.use(bp.urlencoded({extended: false}));
+
 
 app.set('view engine', 'ejs');
 //app.use(expressLayouts);
@@ -17,6 +22,12 @@ const adm_route = require('../src/routes/adm');
 
 app.use('/', morador_route);
 app.use('/adm', adm_route);
+
+app.get('/up',  function(req, res){
+  return res.render('sucess/_index');
+});
+
+
 
 /*app.use('/', (req, res) => {
    return  res.redirect('/'); 

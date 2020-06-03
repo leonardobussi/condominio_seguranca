@@ -18,12 +18,12 @@ exports.postLogar =  async (req, res, next) => {
         const resultado = await Adm.validarEntrada(req.body);
         if(!resultado) {
             console.log('conta nao encontrada');
-            return res.redirect('/adm/logar');
+            return res.render('login/_index', {danger: "E-mail ou Senha inválido"});
             
         }
         if(!await cript.compare(req.body.senha, resultado.senha)) {
             console.log('senha do adm incorreto');
-            return res.redirect('/adm/logar');
+            return res.render('login/_index', {danger: "E-mail ou Senha inválido"});
             
         }
 

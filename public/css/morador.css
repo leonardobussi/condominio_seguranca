@@ -1,0 +1,95 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body {
+    background-color: #fff;
+    color: #000;
+}
+.logo {
+    margin-top: 20px;
+    text-align: center;
+}
+.logo h1 i {
+    color: rgb(236, 108, 193);
+}
+.logo p {
+    color: darkgrey;
+}
+.conteiner {
+    margin-top: 50px;
+    padding: 0 37%;
+}
+.alert {
+    width: 98%;
+    background-color: rgb(243, 148, 148);
+    /*padding: 5px;*/
+    padding: 0 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+form {
+    border: 1px solid rgba(255, 255, 255, 0.37) ;
+    padding: 5px;
+    height: 400px;
+    width: 350px;
+    background-color: #eee;
+    flex: 1;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+                0px 3px 1px -2px rgba(0, 0, 0, 0.12), 
+                0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+
+}
+.nik {
+    margin-top: 50px;
+}
+.pas {
+    margin-top: 20px;
+}
+label {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 5px;
+}
+input {
+    display: inline-block;
+    width: 95%;
+    height: 20px;
+    padding: 10px 5px;
+    border-radius: 2px;
+    border: none;
+    margin-left: 5px;
+}
+button {
+    margin-top: 40px;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: darkturquoise;
+    color: #fff;
+}
+button:hover {
+    opacity: 0.7;
+}
+footer {
+    margin-top: 20px;
+    background-color: rgb(243, 242, 242);
+    height: 45px;
+}
+footer .link::before {
+    border: 5px solid #000;
+    background-color: darkviolet;
+}
+footer .link{
+    text-align: center;
+} 
+footer .link a {
+    margin-left: 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
