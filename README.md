@@ -109,7 +109,7 @@ Você também verá quaisquer erros no console.
 - [x] controlle do Morador.
 - [x] autenticação senha 2.
 - [x] bloquear a rota [http://localhost:3000/funcionario/criar](http://localhost:3000/funcionario/criar) de usuarios que não é adm.
-- [ ] retornar a mensagem (assalto) ao adm.
+- [x] retornar a mensagem (assalto) ao adm.
 - [ ] retornar a mensagem nas requisiçoes (ex: conta criada com sucesso, conta ja existe, senha ou email incorretos).
 - [x] conserta a rota do do login do usuario, está redirecionado para a tela de criar usuarios.
 - [x] conserta controllers retornano uma tela não programada e apresentado menssage não interessante ao usuario.
