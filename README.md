@@ -117,7 +117,7 @@ Você também verá quaisquer erros no console.
 - [x] responsividade na tela de login(moradores).
 - [x] responsividade na tela de criar(moradores).
 
-### Dados para uso: <br />
+### Dados para uso teste: <br />
 
 #### morador:
 
