@@ -51,24 +51,24 @@ fluxograma do schema:
 
 ```mermaid
 graph LR
+
+
 Adm[Administrador]
-
-
 Adm --> A((nome))
 Adm --> B((email))
 Adm --> C((senha))
 Adm --> D((log)) 
 
-D((log)) -- data e hora do registro no sistema --> D
+
 
 Mora[Morador]
 Mora --> A
 Mora --> E((nickname))
 Mora --> F((senha1))
 Mora --> G((senha2))
-Mora --> D
+Mora --> D((log))
 
-Mora --> Ca
+Mora[Morador] --> Ca[Casa]
 
 Ca[Casa]
 Ca --> H((bloco))
