@@ -15,10 +15,10 @@
 [Setup](https://gitlab.com/BDAg/condsystem/-/wikis/Setup) |
 
 
-![Build Status](https://travis-ci.org/condessalovelace/mavenquickstart.svg?branch=master) ![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=br.com%3Amavenquickstart&metric=alert_status)
+![Build Status](https://travis-ci.org/condessalovelace/mavenquickstart.svg?branch=master) 
+![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=br.com%3Amavenquickstart&metric=alert_status)
 
-
-<div align="center">![j](https://media.giphy.com/media/PmEvQTKerJEu9RDert/giphy.gif)</div>
+![top](https://media.giphy.com/media/PmEvQTKerJEu9RDert/giphy.gif)
 
 ## **Etapas**
 
