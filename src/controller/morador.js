@@ -3,7 +3,6 @@ const cript = require('bcrypt');
 const storage = require('localtoken');
 const auth = require('../middleware/auth');
 
-const flash = require('connect-flash')
 
 
 
@@ -66,7 +65,7 @@ exports.getDeslogar = async (req, res, next) => {
 // criar funcionario
 exports.getCriar =  async (req, res, next) => {
     try {
-        return res.render('register/_index');
+        return res.render('register/_index', {danger: " ", danger2: " "});
     } catch (err) {
         next(err);
     }
@@ -76,11 +75,11 @@ exports.postCriar =  async (req, res, next) => {
     try {
        let resultado = await Morador.validarRegistro(req.body);
        if(!resultado){
-           let morador = await Morador.criar(req.body);
-           return res.render('register/_index');
+           //let morador = await Morador.criar(req.body);
+           return res.render('register/_index', {danger: " ", danger2: "Registrado com sucesso"});
        } else {
            console.log('morador ja existe');
-           return res.redirect('criar');
+           return res.render('register/_index', {danger: "Error! falha no registro ou morador já existe",  danger2: " "});;
        }
     } catch (err) {
         next(err);

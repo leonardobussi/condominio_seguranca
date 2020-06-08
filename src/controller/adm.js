@@ -7,7 +7,7 @@ const auth = require('../middleware/auth');
 // logar no sistema
 exports.getLogar =  async (req, res, next) => {
     try {
-        return res.render('login/_index');
+        return res.render('login/_index', {danger: " "});
     } catch (err) {
         next(err);
     }

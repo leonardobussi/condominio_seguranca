@@ -29,9 +29,6 @@ app.get('/up',  function(req, res){
 
 
 
-/*app.use('/', (req, res) => {
-   return  res.redirect('/'); 
-}); */
 
 
 module.exports = app;

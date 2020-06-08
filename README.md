@@ -37,11 +37,11 @@
 * [x] Tela da admistração - (12/05/2020)
 
 **Sprint 2** (31/05/2020) e (14/06/2020)
-* [ ] integração Apis
-* [ ] integração da Aplicação
+* [x] integração Apis (08/06/2020)
+* [x] integração da Aplicação (08/06/2020)
 
 **Sprint 3** (21/06/2020)
-* [ ] ajuste fino da aplição
+* [ ] implemetação erbsocket.io (notificação tempo real ao adm em caso de assalto)
 * [ ] Deploy da Aplicação
 * [ ] Documentação do projeto
 * [ ] matriz de habilidade (Lições aprendidas)
@@ -109,10 +109,10 @@ Você também verá quaisquer erros no console.
 - [x] controlle do Morador.
 - [x] autenticação senha 2.
 - [x] bloquear a rota [http://localhost:3000/funcionario/criar](http://localhost:3000/funcionario/criar) de usuarios que não é adm.
-- [x] retornar a mensagem (assalto) ao adm.
-- [ ] retornar a mensagem nas requisiçoes (ex: conta criada com sucesso, conta ja existe, senha ou email incorretos).
+- [ ] retornar a mensagem (assalto) ao adm.
+- [x] retornar a mensagem nas requisiçoes (ex: conta criada com sucesso, conta ja existe, senha ou email incorretos).
 - [x] conserta a rota do do login do usuario, está redirecionado para a tela de criar usuarios.
-- [x] conserta controllers retornano uma tela não programada e apresentado menssage não interessante ao usuario.
+- [x]conserta controllers retornano uma tela não programada e apresentado menssage não interessante ao usuario.
 - [x] responsividade na tela de login(adm).
 - [x] responsividade na tela de login(moradores).
 - [x] responsividade na tela de criar(moradores).

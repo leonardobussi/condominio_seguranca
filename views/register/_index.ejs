@@ -24,17 +24,53 @@
     .header-top button:hover{
         opacity: 0.7;
     }
+    .alert {
+    width: 98%;
+    background-color: rgb(243, 148, 148);
+    /*padding: 5px;*/
+    max-height: 20px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.alert2 {
+    width: 98%;
+    background-color: rgb(36, 207, 87);
+    /*padding: 5px;*/
+    max-height: 20px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
 </style>
 <body>
     <header class="header-top">
-        <button onClick="javascript:window.location.href='/adm/logar', {danger: ''}"><i class="material-icons">arrow_back </i></button>
+        <button onClick="javascript:window.location.href='/adm/logar', {danger: ''} "><i class="material-icons">arrow_back </i></button>
     </header>
+
+    <% if (danger == undefined || danger == null || danger2 == undefined || danger2 == null) {
+        danger = " "
+        danger2 = " "
+    }
+    %>
+
+    
+
 
     <div class="container ">
         <div class="row ">
             <aside class="col-md-6 offset-md-3" >
             <div class="card shadow " >
             <article class="card-body">
+
+                <h3 id="alert" class="alert" > <%= danger %></h3>
+                <h3 id="alert2" class="alert2" > <%= danger2 %></h3>
 
                 
                 <h4 class="card-title mb-4 mt-1">Sign up</h4>
@@ -118,9 +154,9 @@
                 alert("Numero da casa não informado!")
             }
             // se bloco for = 0 imprime alerta de bloco não informado!!
-            if (block == 0){
+            /*if (block == 0){
                 alert("Bloco não informado!")
-            }
+            }*/
         }
     </script>
 
