@@ -3,6 +3,10 @@ const cript = require('bcrypt');
 const storage = require('localtoken');
 const auth = require('../middleware/auth');
 
+const mongoose = require('mongoose');
+require('../models/entrada');
+const modelo =  mongoose.model('entrada');
+
 
 
 
@@ -27,29 +31,43 @@ exports.postLogar =  async (req, res, next) => {
             //return res.render('morador/_index'); 
             return res.render('morador/_index', {danger: "E-mail ou Senha inválido"}); 
         }
-        if(!await cript.compare(req.body.senha, resultado.senha1)) {
-            console.log("senha errada");
+        if(!await cript.compare(req.body.senha, resultado.senha1)) {   
             if(!await cript.compare(req.body.senha, resultado.senha2)){
-                
+                console.log("senha errada");
                 return res.render('morador/_index', {danger: "E-mail ou Senha inválido"});
                 
             }
             else{
                 console.log('perigo meu parceiro');
-                //return res.render('morador/_index');
-               
+                const {nome} = await Morador.validarEntrada(req.body);
+                now = new Date
+                const meusDados = {nome: nome, data: now}; 
+                console.log(meusDados);
+                await new  modelo(meusDados).save();
+                     
             }
+        }
+        else{
+            console.log('entrando normal');
         }
        
         const token = await auth.gerarToken( { resultado });
         storage.setInLocal('morador', token);
-        console.log("entrando normal");
-        //return res.send("bem vindo");
         return res.redirect('/up');
     } catch (err) {
         next(err);
     }
 }
+
+exports.up = async (req, res, next) => {
+    try {
+        await storage.removeLocal('morador');
+        return res.render('sucess/_index');
+    } catch (err) {
+        next(err);
+    }
+}
+
 
 exports.getDeslogar = async (req, res, next) => {
     try {
@@ -75,8 +93,11 @@ exports.postCriar =  async (req, res, next) => {
     try {
        let resultado = await Morador.validarRegistro(req.body);
        if(!resultado){
-           //let morador = await Morador.criar(req.body);
+           
+           let morador = await Morador.criar(req.body);
+            console.log(morador)
            return res.render('register/_index', {danger: " ", danger2: "Registrado com sucesso"});
+            
        } else {
            console.log('morador ja existe');
            return res.render('register/_index', {danger: "Error! falha no registro ou morador já existe",  danger2: " "});;

@@ -3,10 +3,6 @@ const bp = require('body-parser');
 const app = express();
 
 
-
-
-
-
 app.use(bp.json());
 app.use(bp.urlencoded({extended: false}));
 
@@ -23,9 +19,13 @@ const adm_route = require('../src/routes/adm');
 app.use('/', morador_route);
 app.use('/adm', adm_route);
 
-app.get('/up',  function(req, res){
+/*app.use('/painel', function(req, res){
+  return res.render('painel/_index');
+});*/
+
+/*app.get('/up', function(req, res){
   return res.render('sucess/_index');
-});
+});*/
 
 
 

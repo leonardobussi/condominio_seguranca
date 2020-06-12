@@ -16,6 +16,19 @@ exports.autorizar = async (req, res, next) => {
     }
 }
 
+exports.autorizarMorador = async (req, res, next) => {
+    try {
+        const token = await storage.getInLocal('morador');
+        if(!token){
+            return res.redirect('/');   //send('permissao negada');
+
+        }
+        return next();
+    } catch (err) {
+        next(err);
+    }
+}
+
 exports.gerarToken = async (dados) => {
     return await jwt.sign(dados, keys.auth.secret);
 }

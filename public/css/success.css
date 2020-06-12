@@ -56,3 +56,11 @@ body {
         background-position: 0;
     }
 }
+@media screen and (max-width: 800px) {
+    .conteiner {
+        padding: 0 10%;
+    }  
+    .loading {
+        margin-top: 10px;
+    }     
+}

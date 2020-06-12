@@ -8,25 +8,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 	<title>CondSystem</title>
-</head>
-	
+</head>	
 	<body>
-		
-
-			<div class="logo">
-				<h1>Cond<i>System</i></h1>
-				<p>O melhor e mais seguro Condominio da região</p>
-			</div>
+		<div class="logo">
+			<h1>Cond<i>System</i></h1>
+			<p>O melhor e mais seguro Condominio da região</p>
+		</div>
 
 		<div class="conteiner">
-<!--style="visibility:visible;" 
-E-mail ou Senhas estão incorretos-->
- 
 			<h3 id="alert" class="alert" > <%= danger %></h3>
-
-
 			<form method="Post" enctype="application/x-www-form-urlencoded">
-				<h1 style="margin-top: 30px; text-align: center; font-family: 'Roboto', sans-serif;">Sing in</h1>
+				<h1 style="margin-top: 30px; text-align: center; font-family: 'Roboto', sans-serif;">Sign in</h1>
 				<div class="nik">
 					<label>Nickname</label>
 					<input autocomplete="off" id="txt"  required type="text" placeholder="fulano_55r" name="nickname">
@@ -40,32 +32,21 @@ E-mail ou Senhas estão incorretos-->
 				<button type="submit" value="Verificar" onclick="verificar()">Entrar</button>
 			</form>
 		</div>
+
 		<script>
-		
-		
-		
-
-
 			function verificar(){
 				var txtv = window.document.querySelector('input#txt')   // var "txtv" pegando informações que usuario digitar no email
 				var txtw = window.document.querySelector('input#txt1')  // var "txt1" pegando informações que usuario digitar na senh  
 				var nikename = (txtv.value)                            // Transforma  "txtv" em var email
 				var senha = (txtw.value)                           // Transforma  "txtw" em var senha
-				
-	
 				// os input não vai aceitar campos vazios por causa do atributo "required"
-	
-	
 				if (senha.length < 3){
 					alert("senha curta")
-				}
-				
+				}	
 			}
 		</script>
 			
-			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	   
-	
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>	
 	</body>
 </html>

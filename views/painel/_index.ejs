@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>condsystem</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: cornflowerblue;
+    padding: 0 30px;
+    position: fixed;
+    z-index: 999;
+  }
+  header h3 {
+    padding-top: 15px;
+    width: 10%;
+    color: #fff;
+  }
+ header h3 i {
+   color: rgb(255, 0, 0);
+ }
+ nav {
+   float: right;
+ }
+ nav ul {
+  margin-top: -15px;
+  flex: 1;
+  margin-right: 100px;
+ }
+ nav ul li {
+  display: inline;
+  margin-right: 30px;
+ }
+ nav ul li a {
+   color: #fff;
+   text-decoration: none;
+    font-size: 14px;
+ }
+nav ul li a:hover {
+  color: crimson;   
+ }
+ .conteiner{
+   padding: 0 30%;
+ }
+ .ocorrencia {
+   margin-top: 80px;
+ }
+ .ocorrencia h1 {
+   text-align: center;
+   margin-bottom: 40px;
+ }
+ .card {
+   width: 95% ;
+   height: 90px;
+   padding: 10px;
+   background-color: rgb(145, 62, 240);
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+   margin: 5px 0;
+   border-radius: 3px;
+ }
+ .card h3 {
+   font-size: 25px;
+   margin-bottom: 5px;
+   color: #fff;
+ }
+ .card span {
+   font-size: 20px;
+   color: rgb(224, 224, 224);
+ }
+ @media screen and (max-width: 654px) {
+  .conteiner{
+   padding: 0 10%;
+ }   
+ header {
+   height: 190px;
+ } 
+ nav {
+   margin-top: 20px;
+   float: left;
+ }
+ nav ul {
+  margin-top: 0;
+  flex: 1;
+  margin-right: 10px;
+ }
+ .ocorrencia {
+   margin-top: 200px;
+ }
+}
+@media screen and (max-width: 410px) {
+  nav ul li {
+  display: grid;
+ }
+ nav ul li a {
+   background-color: rgb(136, 40, 226);
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid rgba(255, 255, 255, 0.623);
+   color: #fff;
+   text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+ }
+nav ul li a:hover {
+  opacity: 0.6; 
+  color: #fff; 
+ }
+ .card h3 {
+   font-size: 20px;
+   color: #fff;
+ }
+ .card span {
+   font-size: 12px;
+   color: rgb(224, 224, 224);
+ }
+ .ocorrencia h1 {
+   font-size: 22px;
+ }
+}
+</style>
+<body>
+  <header>
+    <h3>Cond<i>System</i></h3>
+
+    <nav>
+      <ul>
+        <li><a href="/adm/criar/">Registrar Morador</a></li>
+        <li><a href="#">Registrar Administrador</a></li>
+        <li><a href="/adm/deslogar/">Sign out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="conteiner">
+    <div class="ocorrencia">
+      <h1>OCORRENCIAS</h1>
+
+      <% dados.forEach(i => {%>
+      <div class="card">
+        <h3> <%= i.nome %></h3>
+        <span> <%= i.data %></span>
+      </div>
+      <%}) %>
+
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -14,6 +14,10 @@ router.get('/todos', auth.autorizar, Adm.buscarTodos);
 router.get('/logar', Adm.getLogar);
 router.post('/logar', Adm.postLogar);
 
+
+router.get('/painel', auth.autorizar, Adm.getPainel);
+router.post('/painel', Adm.postPainel);
+
 router.get('/criar',auth.autorizar, Morador.getCriar); //auth.autorizar
 router.post('/criar', Morador.postCriar);
 

@@ -4,6 +4,11 @@ const storage = require('localtoken');
 const Adm = require('../resources/adm');
 const auth = require('../middleware/auth');
 
+
+require('../models/entrada');
+const mongoose = require('mongoose');
+const modelo =  mongoose.model('entrada');
+
 // logar no sistema
 exports.getLogar =  async (req, res, next) => {
     try {
@@ -29,11 +34,35 @@ exports.postLogar =  async (req, res, next) => {
 
         const token = await auth.gerarToken( { resultado });
         storage.setInLocal('login', token);
-        return res.redirect('criar');
+        return res.redirect('painel');
 
 
     } catch (err) {
         next(err);
+    }
+}
+
+exports.getPainel = async (req, res, next) => {
+    try {
+        const dados = await modelo.find({});
+        const dadosDate = [dados]
+        console.log(dadosDate);
+        
+       //return res.render('painel/_index',{nome: dadosDate.nome, data: dadosDate.data});
+
+        return res.render('painel/_index',{dados: dados}); 
+        
+
+    } catch (err) {
+        next(err)
+    }
+}
+
+exports.postPainel = async (req, res, next) => {
+    try {
+       return res.render('painel/_index');
+    } catch (err) {
+        next(err)
     }
 }
 

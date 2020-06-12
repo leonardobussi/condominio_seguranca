@@ -93,3 +93,25 @@ footer .link a {
     font-size: 12px;
     text-decoration: none;
 }
+@media screen and (max-width: 800px) {
+    .conteiner {
+        padding: 0 10%;
+    }   
+}
+@media screen and (max-width: 452px) {
+    form {
+        width: 100%;
+    }
+    .logo h1{
+        font-size: 14px;
+    }
+    .logo p {
+        font-size: 10px;
+    }
+    .nik {
+        margin-right: 10px;
+    }
+    .pas {
+        margin-right: 10px;
+    }  
+}

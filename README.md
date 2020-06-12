@@ -1,6 +1,3 @@
-# condsystem
-
-
 # CondSystem o sistema de segurança de portaria 
 
 
@@ -15,10 +12,10 @@
 [Setup](https://gitlab.com/BDAg/condsystem/-/wikis/Setup) |
 
 
-![Build Status](https://travis-ci.org/condessalovelace/mavenquickstart.svg?branch=master) 
-![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=br.com%3Amavenquickstart&metric=alert_status)
+![Build Status](https://travis-ci.org/condessalovelace/mavenquickstart.svg?branch=master) ![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=br.com%3Amavenquickstart&metric=alert_status)
 
-![top](https://media.giphy.com/media/PmEvQTKerJEu9RDert/giphy.gif)
+
+<div align="center">![j](https://media.giphy.com/media/PmEvQTKerJEu9RDert/giphy.gif)</div>
 
 ## **Etapas**
 
@@ -36,43 +33,51 @@
 * [x] Tela da portaria - (18/05/2020)
 * [x] Tela da admistração - (12/05/2020)
 
-**Sprint 2** (31/05/2020) e (14/06/2020)
-* [x] integração Apis (08/06/2020)
-* [x] integração da Aplicação (08/06/2020)
+**Sprint 2** (14/06/2020)
+* [x] integração Apis (8/06/2020)
+* [x] integração da Aplicação (8/06/2020)
 
 **Sprint 3** (21/06/2020)
-* [ ] implemetação erbsocket.io (notificação tempo real ao adm em caso de assalto)
-* [ ] Deploy da Aplicação
+* [x] implementação (notify messenger adm), painel do administrador, bloquear rotas e concerta o os front-end (12/06/2020)
+* [x] Deploy da Aplicação (12/06/2020)
 * [ ] Documentação do projeto
 * [ ] matriz de habilidade (Lições aprendidas)
 
+**Extra** (no date)
+* [ ] ordernar as mesagem de assalto ao adm no front end (extra);
+* [ ] colocar a data da mensagem de assalto no padrão brasileiro (extra).
 
 fluxograma do schema:
 
 ```mermaid
 graph LR
-
-
 Adm[Administrador]
+
+
 Adm --> A((nome))
 Adm --> B((email))
 Adm --> C((senha))
-Adm --> D((log)) 
 
+en[EntradaDoMorador]
 
+en --> K
+en --> J((data))
+
+en --> Mora
 
 Mora[Morador]
-Mora --> A
+Mora --> G((senha2))
 Mora --> E((nickname))
 Mora --> F((senha1))
-Mora --> G((senha2))
-Mora --> D((log))
+Mora -->  K((nome))
 
-Mora[Morador] --> Ca[Casa]
+Mora --> Ca
 
 Ca[Casa]
 Ca --> H((bloco))
 Ca --> I((numero))
+
+
 
 ```
 
@@ -85,39 +90,51 @@ No diretório do projeto, você pode executar:
 * `yarn roda` ou `npm run roda`
 
 Executa o aplicativo no modo de desenvolvimento.<br />
-Abrir [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
+Abrir para visualizá-lo no navegador.
 
 A página será recarregada se você fizer edições. <br />
 Você também verá quaisquer erros no console.
 
-### As rotas que estão funcionando com o Front-End são: <br />
-
 * logar morador(portaria) [http://localhost:3000/](http://localhost:3000/)
-* logar adminstrador [http://localhost:3000/adm/logar](http://localhost:3000/funcionario/logar)
-* criar morador (rota protegida) [http://localhost:3000/adm/criar](http://localhost:3000/funcionario/criar)
+* logar adminstrador [http://localhost:3000/adm/logar/](http://localhost:3000/funcionario/logar)
+* criar morador (rota protegida) [http://localhost:3000/adm/criar/](http://localhost:3000/funcionario/criar)
+* load do portao (rota protegida) [http://localhost:3000/up/](http://localhost:3000/up/)
+* painel do adminstrador (rota protegida) [http://localhost:3000/adm/painel/](http://localhost:3000/adm/panel/)
 
 ### As rota que estão sem Front-End  são: <br />
 
-* criar adminstrador [http://localhost3000/adm/criar](http://localhost:3000/adm/)
+* criar adminstrador [http://localhost3000/adm/criar](http://localhost:3000/adm/criar)
 * lista todos moradores //sem rota 
+
+#### features
 
 - [x] controller do ADM.
 - [x] tela de login do Adm.
 - [x] tela de registrar moradores.
 - [x] tela de autenticação do morador.
+- [x] tela de load(portao).
+- [x] painel da adminstração.
 - [x] criptografia das senhas.
 - [x] controlle do Morador.
 - [x] autenticação senha 2.
-- [x] bloquear a rota [http://localhost:3000/funcionario/criar](http://localhost:3000/funcionario/criar) de usuarios que não é adm.
-- [ ] retornar a mensagem (assalto) ao adm.
-- [x] retornar a mensagem nas requisiçoes (ex: conta criada com sucesso, conta ja existe, senha ou email incorretos).
-- [x] conserta a rota do do login do usuario, está redirecionado para a tela de criar usuarios.
-- [x]conserta controllers retornano uma tela não programada e apresentado menssage não interessante ao usuario.
-- [x] responsividade na tela de login(adm).
-- [x] responsividade na tela de login(moradores).
-- [x] responsividade na tela de criar(moradores).
+- [x] bloquear a rota [http://localhost:3000/adm/criar/](http://localhost:3000//adm/criar/) de usuarios que não é adm;
+- [x] bloquear a rota [http://localhost:3000/adm/painel/](http://localhost:3000/adm/painel/) de usuarios que não é adm;
+- [x] bloquear a rota [http://localhost:3000/up/](http://localhost:3000/up/) simulador do portao abrindo;
+- [x] retornar a mensagem nas requisiçoes (ex: conta criada com sucesso, conta ja existe, senha ou email incorretos);
+- [x] conserta a rota do do login do usuario, está redirecionado para a tela de criar usuarios;
+- [x] conserta controllers retornano uma tela não programada e apresentado menssage não interessante ao usuario;
+- [x] responsividade na tela de login(adm);
+- [x] responsividade na tela de login(moradores);
+- [x] responsividade na tela de criar(moradores);
+- [x] responsividade na tela de load(moradores);
+- [x] responsividade no painel (adm);
+- [x] criar um schema de log de entrada ao condominio (somente para quando usa a senha dois);
+- [x] registrar a entrada do morador no schema;
+- [x] retornar a mensagem de assalto ao painel do adminstrador pelo schema de logs de entrada;
+- [ ] ordernar as mesagem de assalto ao adm no front end (extra);
+- [ ] colocar a data da mensagem de assalto no padrão brasileiro (extra).
 
-### Dados para uso teste: <br />
+### Dados para uso: <br />
 
 #### morador:
 
@@ -133,3 +150,5 @@ Você também verá quaisquer erros no console.
 * nome: leonardo 
 * email: leonardo@teste.com
 * senha: 123456789
+
+#### *projeto sobre [licença MIT](https://gitlab.com/BDAg/condsystem/-/blob/master/LICENSE)*
