@@ -1,18 +1,5 @@
 # CondSystem o sistema de segurança de portaria 
 
-
-| 
-[Wiki](https://gitlab.com/BDAg/condsystem/-/wikis/home) | 
-[Equipe](https://gitlab.com/BDAg/condsystem/-/wikis/Equipe) | 
-[Todos os Projetos](https://gitlab.com/BDAg) |
-[MVP](https://gitlab.com/BDAg/condsystem/-/wikis/MVP) |
-[Mapa de Conhecimento](https://gitlab.com/BDAg/condsystem/-/wikis/Mapa-de-conhecimento) |
-[Matriz de Habilidade](https://gitlab.com/BDAg/condsystem/-/wikis/Matriz-de-Habilidade) |
-[Conograma](https://gitlab.com/BDAg/condsystem/-/wikis/Conograma) |
-[Setup](https://gitlab.com/BDAg/condsystem/-/wikis/Setup) |
-[Documentação](https://gitlab.com/BDAg/condsystem/-/wikis/Documentação) |
-
-
 ![Build Status](https://travis-ci.org/condessalovelace/mavenquickstart.svg?branch=master) ![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=br.com%3Amavenquickstart&metric=alert_status)
 
 
@@ -150,23 +137,4 @@ Você também verá quaisquer erros no console.
 ![5](https://user-images.githubusercontent.com/54999837/84574968-63341c00-ad80-11ea-9b34-0339adbbe423.png)
 
 
-### Dados para uso: <br />
-
-#### morador:
-
-* nome: Leonardo Bezerra Bussi
-* nickname: leonardo_bussi
-* senha1: 123456
-* senha2: 123455
-* numero: 12  //numero da casa
-* bloco: 33b //bloco da casa
-
-#### administrador:
-
-* nome: leonardo 
-* email: leonardo@teste.com
-* senha: 123456789
-
-#### projeto sobre [licença MIT](https://gitlab.com/BDAg/condsystem/-/blob/master/LICENSE)
-
-###### Fatec Pompeia, Big Data no Agronegocio © - 2020
+###### Leonardo B. Bussi © - 2020 [licença MIT](https://gitlab.com/BDAg/condsystem/-/blob/master/LICENSE)
