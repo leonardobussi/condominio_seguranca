@@ -7,13 +7,6 @@
 
 ## **Etapas**
 
-**Definições do Projeto** (13/05/2020)
-* [x] Equipe e tema - (05/03/2020)
-* [x] MVP - (12/03/2020)
-* [x] Matriz de habilidade - (12/03/2020)
-* [x] Mapa de conhecimento - (12/03/2020)
-* [x] Cronograma - (03/05/2020)
-
 **Sprint 1** (24/05/2020)
 * [x] Modelagem do banco de dados (12/05/2020)
 * [x] API morador - (09/05/2020)
@@ -26,15 +19,10 @@
 * [x] integração da Aplicação (8/06/2020)
 
 **Sprint 3** (21/06/2020)
-* [x] implementação (notify messenger adm), painel do administrador, bloquear rotas e concerta o os front-end (12/06/2020)
-* [x] Deploy da Aplicação (12/06/2020)
-* [x] Documentação da interface (12/06/2020)
-* [ ] Documentação do projeto
-* [ ] matriz de habilidade (Lições aprendidas)
-
-**Extra** (no date)
-* [x] ordernar as mesagem de assalto ao adm no front end (extra);
-* [ ] colocar mensagem em tempo real(websockt.io)
+* [x] implementação (notify messenger adm), painel do administrador, bloquear rotas e concerta o os front-end (12/06/2020);
+* [x] Deploy da Aplicação (12/06/2020);
+* [x] ordernar as mesagem de assalto ao adm no front end (12/06/2020);
+* [ ] colocar mensagem em tempo real(websockt.io).
 
 fluxograma do schema:
 
