@@ -137,4 +137,4 @@ Você também verá quaisquer erros no console.
 ![5](https://user-images.githubusercontent.com/54999837/84574968-63341c00-ad80-11ea-9b34-0339adbbe423.png)
 
 
-###### Leonardo B. Bussi © - 2020 [licença MIT](https://gitlab.com/BDAg/condsystem/-/blob/master/LICENSE)
+###### Leonardo B. Bussi © - 2020 [licença MIT](https://raw.githubusercontent.com/leonardobussi/condsystem/master/LICENSE)
