@@ -144,7 +144,7 @@ Você também verá quaisquer erros no console.
 ##### tela do Morador (portaria)
 ![1](https://user-images.githubusercontent.com/54999837/84574946-4e578880-ad80-11ea-88e1-ea6994dacf90.png)
 ![2](https://user-images.githubusercontent.com/54999837/84574949-53b4d300-ad80-11ea-9dfb-f4eeeae2a82c.png)
-##### tela do Morador (portaria)
+##### tela da adminstração
 ![3](https://user-images.githubusercontent.com/54999837/84574954-58798700-ad80-11ea-86a8-35f2ff8ef74f.png)
 ![4](https://user-images.githubusercontent.com/54999837/84574965-5d3e3b00-ad80-11ea-9ceb-1bd06d1cdb11.png)
 ![5](https://user-images.githubusercontent.com/54999837/84574968-63341c00-ad80-11ea-9b34-0339adbbe423.png)
