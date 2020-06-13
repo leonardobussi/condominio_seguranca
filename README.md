@@ -10,12 +10,13 @@
 [Matriz de Habilidade](https://gitlab.com/BDAg/condsystem/-/wikis/Matriz-de-Habilidade) |
 [Conograma](https://gitlab.com/BDAg/condsystem/-/wikis/Conograma) |
 [Setup](https://gitlab.com/BDAg/condsystem/-/wikis/Setup) |
+[Documentação](https://gitlab.com/BDAg/condsystem/-/wikis/Documentação) |
 
 
 ![Build Status](https://travis-ci.org/condessalovelace/mavenquickstart.svg?branch=master) ![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=br.com%3Amavenquickstart&metric=alert_status)
 
 
-<div align="center">![j](https://media.giphy.com/media/PmEvQTKerJEu9RDert/giphy.gif)</div>
+![j](https://media.giphy.com/media/PmEvQTKerJEu9RDert/giphy.gif)
 
 ## **Etapas**
 
@@ -40,12 +41,13 @@
 **Sprint 3** (21/06/2020)
 * [x] implementação (notify messenger adm), painel do administrador, bloquear rotas e concerta o os front-end (12/06/2020)
 * [x] Deploy da Aplicação (12/06/2020)
+* [x] Documentação da interface (12/06/2020)
 * [ ] Documentação do projeto
 * [ ] matriz de habilidade (Lições aprendidas)
 
 **Extra** (no date)
-* [ ] ordernar as mesagem de assalto ao adm no front end (extra);
-* [ ] colocar a data da mensagem de assalto no padrão brasileiro (extra).
+* [x] ordernar as mesagem de assalto ao adm no front end (extra);
+* [ ] colocar mensagem em tempo real(websockt.io)
 
 fluxograma do schema:
 
@@ -131,8 +133,20 @@ Você também verá quaisquer erros no console.
 - [x] criar um schema de log de entrada ao condominio (somente para quando usa a senha dois);
 - [x] registrar a entrada do morador no schema;
 - [x] retornar a mensagem de assalto ao painel do adminstrador pelo schema de logs de entrada;
-- [ ] ordernar as mesagem de assalto ao adm no front end (extra);
-- [ ] colocar a data da mensagem de assalto no padrão brasileiro (extra).
+- [x] ordernar as mesagem de assalto ao adm no front end (extra);
+- [ ] colocar mensagem em tempo real(websockt.io)
+
+
+### telas
+
+##### tela do Morador (portaria)
+![1](/uploads/d402a575186cb2b3279d9a30e0c42bf7/1.png)
+![2](/uploads/d908f05316f5d4c3cb8a7f40274e51f1/2.png)
+##### tela do Morador (portaria)
+![3](/uploads/4efbe0cc9fc547447fcc6ae189ad88af/3.png)
+![4](/uploads/7d883913c040f21b287c457a0dc4ad66/4.png)
+![5](/uploads/deb174ed90d09e20d162644e4da7b3e8/5.png)
+
 
 ### Dados para uso: <br />
 
@@ -151,4 +165,6 @@ Você também verá quaisquer erros no console.
 * email: leonardo@teste.com
 * senha: 123456789
 
-#### *projeto sobre [licença MIT](https://gitlab.com/BDAg/condsystem/-/blob/master/LICENSE)*
+#### projeto sobre [licença MIT](https://gitlab.com/BDAg/condsystem/-/blob/master/LICENSE)
+
+###### Fatec Pompeia, Big Data no Agronegocio © - 2020

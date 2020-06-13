@@ -8,6 +8,16 @@
 body {
     background-color: #eee;
 }
+.logo {
+    margin-top: 20px;
+    text-align: center;
+}
+.logo h1 i {
+    color: rgb(236, 108, 193);
+}
+.logo p {
+    color: darkgrey;
+}
 .conteiner {
     margin-top: 100px;
     padding: 0 30%;
@@ -63,4 +73,12 @@ body {
     .loading {
         margin-top: 10px;
     }     
+}
+@media screen and (max-width: 452px) {
+    .logo h1{
+        font-size: 14px;
+    }
+    .logo p {
+        font-size: 10px;
+    }  
 }

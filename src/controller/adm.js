@@ -9,6 +9,7 @@ require('../models/entrada');
 const mongoose = require('mongoose');
 const modelo =  mongoose.model('entrada');
 
+
 // logar no sistema
 exports.getLogar =  async (req, res, next) => {
     try {
@@ -45,11 +46,8 @@ exports.postLogar =  async (req, res, next) => {
 exports.getPainel = async (req, res, next) => {
     try {
         const dados = await modelo.find({});
-        const dadosDate = [dados]
-        console.log(dadosDate);
-        
-       //return res.render('painel/_index',{nome: dadosDate.nome, data: dadosDate.data});
-
+        dados.reverse()
+        console.log(dados);
         return res.render('painel/_index',{dados: dados}); 
         
 

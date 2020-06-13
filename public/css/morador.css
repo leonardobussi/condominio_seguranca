@@ -95,7 +95,12 @@ footer .link a {
 }
 @media screen and (max-width: 800px) {
     .conteiner {
-        padding: 0 10%;
+        padding: 0 25%;
+    }   
+}
+@media screen and (max-width: 500px) {
+    .conteiner {
+        padding: 0 15%;
     }   
 }
 @media screen and (max-width: 452px) {

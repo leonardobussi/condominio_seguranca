@@ -26,21 +26,21 @@ exports.postLogar =  async (req, res, next) => {
     try {
         const resultado = await Morador.validarEntrada(req.body);
         if(!resultado) {
-            console.log("Email Incorreta");
+            console.log("nickname ou nenha Invalido");
         
             //return res.render('morador/_index'); 
-            return res.render('morador/_index', {danger: "E-mail ou Senha inválido"}); 
+            return res.render('morador/_index', {danger: "nickname ou senha inválida"}); 
         }
         if(!await cript.compare(req.body.senha, resultado.senha1)) {   
             if(!await cript.compare(req.body.senha, resultado.senha2)){
                 console.log("senha errada");
-                return res.render('morador/_index', {danger: "E-mail ou Senha inválido"});
+                return res.render('morador/_index', {danger: "senha inválida"});
                 
             }
             else{
                 console.log('perigo meu parceiro');
                 const {nome} = await Morador.validarEntrada(req.body);
-                now = new Date
+                now = new Date()
                 const meusDados = {nome: nome, data: now}; 
                 console.log(meusDados);
                 await new  modelo(meusDados).save();
@@ -96,11 +96,11 @@ exports.postCriar =  async (req, res, next) => {
            
            let morador = await Morador.criar(req.body);
             console.log(morador)
-           return res.render('register/_index', {danger: " ", danger2: "Registrado com sucesso"});
+           return res.render('register/_index', {danger: " ", danger2: "registrado com sucesso"});
             
        } else {
            console.log('morador ja existe');
-           return res.render('register/_index', {danger: "Error! falha no registro ou morador já existe",  danger2: " "});;
+           return res.render('register/_index', {danger: "morador já existe",  danger2: " "});;
        }
     } catch (err) {
         next(err);
