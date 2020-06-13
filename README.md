@@ -53,6 +53,8 @@ fluxograma do schema:
 
 ```mermaid
 graph LR
+
+
 Adm[Administrador]
 
 
@@ -140,12 +142,12 @@ Você também verá quaisquer erros no console.
 ### telas
 
 ##### tela do Morador (portaria)
-![1](/uploads/d402a575186cb2b3279d9a30e0c42bf7/1.png)
-![2](/uploads/d908f05316f5d4c3cb8a7f40274e51f1/2.png)
+![1](https://user-images.githubusercontent.com/54999837/84574946-4e578880-ad80-11ea-88e1-ea6994dacf90.png)
+![2](https://user-images.githubusercontent.com/54999837/84574949-53b4d300-ad80-11ea-9dfb-f4eeeae2a82c.png)
 ##### tela do Morador (portaria)
-![3](/uploads/4efbe0cc9fc547447fcc6ae189ad88af/3.png)
-![4](/uploads/7d883913c040f21b287c457a0dc4ad66/4.png)
-![5](/uploads/deb174ed90d09e20d162644e4da7b3e8/5.png)
+![3](https://user-images.githubusercontent.com/54999837/84574954-58798700-ad80-11ea-86a8-35f2ff8ef74f.png)
+![4](https://user-images.githubusercontent.com/54999837/84574965-5d3e3b00-ad80-11ea-9ceb-1bd06d1cdb11.png)
+![5](https://user-images.githubusercontent.com/54999837/84574968-63341c00-ad80-11ea-9b34-0339adbbe423.png)
 
 
 ### Dados para uso: <br />
