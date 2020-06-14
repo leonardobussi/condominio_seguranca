@@ -97,15 +97,23 @@ footer .link a {
     .conteiner {
         padding: 0 25%;
     }   
+    form {
+        width: 100%;
+        height: 350px;
+
+    }
 }
 @media screen and (max-width: 500px) {
     .conteiner {
-        padding: 0 15%;
+        padding: 0 5%;
+        margin-right: 7px;
     }   
 }
 @media screen and (max-width: 452px) {
     form {
         width: 100%;
+        height: 350px;
+
     }
     .logo h1{
         font-size: 14px;
@@ -118,5 +126,6 @@ footer .link a {
     }
     .pas {
         margin-right: 10px;
-    }  
+    } 
+    
 }

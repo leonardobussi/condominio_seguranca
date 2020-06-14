@@ -72,13 +72,40 @@ body {
     }  
     .loading {
         margin-top: 10px;
-    }     
+    } 
+    .card{
+        height: 230px;
+        margin-bottom: 20px;
+    }  
+    .contador {
+        margin: 20px 0;
+        font-size: 90px;
+    } 
+    .card h1 {
+        font-size: 22px;
+    } 
 }
 @media screen and (max-width: 452px) {
+    .conteiner {
+        margin-top: 50px;
+    }
     .logo h1{
         font-size: 14px;
     }
     .logo p {
         font-size: 10px;
     }  
+    .card h1 {
+        font-size: 16px;
+    }
+    .card{
+        height: 200px;
+    }
+    .contador {
+        margin: 20px 0;
+        font-size: 60px;
+    }
+    .load {
+        font-size: 12px;
+    }
 }
