@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "roda": "nodemon server.js"
+    "roda": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "leonardo bussi",
   "license": "ISC",
