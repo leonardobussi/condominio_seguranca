@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #eee;
+    background-color: #fff;
 }
 .logo {
     margin-top: 20px;
@@ -26,9 +26,11 @@ body {
     padding: 5px 0 0 0;
     height: 400px;
     width: 100%;
-    background-color: #ccc;
-    box-shadow: 0 0px 0 0px rgba(0, 0, 0, 0.74),
-                0px 0 2px 0 rgba(0, 0, 0, 0.74);
+    background-clip: border-box;
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 .card h1 {
     font-size: 50px;
@@ -53,7 +55,7 @@ body {
     height: 100%;
     background-size: 50% 50%;
     animation: back 2s ease-in-out 0.5s infinite;
-    background-image: linear-gradient(to right, rgb(120, 16, 126), rgb(225, 9, 236));
+    background-image: linear-gradient(to right, rgb(53, 128, 226), rgb(9, 32, 236));
 }
 @keyframes back {
     0%{
