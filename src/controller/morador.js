@@ -40,8 +40,29 @@ exports.postLogar =  async (req, res, next) => {
             else{
                 console.log('perigo meu parceiro');
                 const {nome} = await Morador.validarEntrada(req.body);
-                now = new Date()
-                const meusDados = {nome: nome, data: now}; 
+
+                var data = new Date()
+                var dia =  data.getDate()
+                var me  = data.getMonth()
+                var mes = me + 1
+                var ano = data.getFullYear()
+                var hora = data.getHours()
+                var min = data.getMinutes()
+                var sec = data.getSeconds()
+                var minhaData = {
+                dia: dia,
+                mes: mes,
+                ano: ano,
+                hora: hora,
+                min: min,
+                sec: sec
+                }
+                var now2 = (minhaData.dia+"/"+minhaData.mes+"/"+minhaData.ano+" - "+minhaData.hora+":"+minhaData.min+":"+minhaData.sec)
+
+
+
+
+                const meusDados = {nome: nome, data: now2, log: data}; 
                 console.log(meusDados);
                 await new  modelo(meusDados).save();
                      

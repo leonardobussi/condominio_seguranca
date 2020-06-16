@@ -7,8 +7,13 @@ smc.smc('entrada', {
         trim: true,
     },
     data: {
-        type: Date,
+        type: String,
         required: false,
+        trim: true,
+    },
+    log: {
+        type: Date,
+        required: false
     }
 });
 
