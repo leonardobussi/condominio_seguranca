@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>CondSystem</title>
+</head>
+<style>
+    .card{
+    
+        margin: 60px 0;
+    }
+    .header-top {
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+        height: 40px;
+        background-color: rgb(42, 102, 212);
+        padding: 0 30px;
+    }
+    .header-top button {
+        color: #fff;
+        border: none;
+        padding-top: 8px;
+        background-color: rgb(42, 102, 212);
+        
+    }
+    .header-top button:hover{
+        opacity: 0.6;
+    }
+    .header-top span {
+        padding-top: 15px;
+        width: 10%;
+        color: rgb(3, 3, 3);
+   }
+   .header-top span i {
+    color: rgb(255, 0, 0);
+   }
+    .alert-div {
+        margin-top: 10px;
+    }
+    .alert1 {
+    width: 98%;
+    background-color: rgb(243, 148, 148);
+    /*padding: 5px;*/
+    max-height: 20px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.alert2 {
+    width: 98%;
+    background-color: rgb(36, 207, 87);
+    /*padding: 5px;*/
+    max-height: 20px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.form-senhas {
+    flex: 1;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.senha2 {
+    margin-left: 55px;
+}
+.form-casa {
+    flex: 1;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.bloco {
+    margin-left: 55px;
+}
+</style>
+    <body>
+        <header class="header-top">
+            <button onClick="javascript:window.location.href='/adm/painel', {danger: ''} "><i class="material-icons">arrow_back </i></button>
+            <span>Cond<i>System</i></span>
+        </header>
+
+        <% if (danger == undefined || danger == null || danger2 == undefined || danger2 == null) {
+            danger = " "
+            danger2 = " "
+        }
+        %>
+        <div class="container ">
+            <div class="row ">
+                <aside class="col-md-6 offset-md-3" >
+
+                    <div class="alert-div">
+                        <h3 id="alert1" class="alert1" > <%= danger %></h3>
+                        <h3 id="alert2" class="alert2" > <%= danger2 %></h3>
+                    </div>
+                    
+
+                    <div class="card shadow " >
+                        <article class="card-body">
+                            <h4 class="card-title mb-4 mt-1">Sign up</h4>
+
+                            <form method="POST" enctype="application/x-www-form-urlencoded">
+                                <div class="form-group">
+                                    <label>Nome Completo</label>
+                                    <input class="form-control"  required placeholder="Jose Gritz Suarez" type="text" name="nome" id="tx1" value="">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input class="form-control"  required placeholder="Jose_Gritz36" value="" type="text" name="email" id="txt2" >
+                                </div>
+
+                                    <div class="form-group">
+                                        <label>Senha</label>
+                                        <input class="form-control" required placeholder="*********" type="password" value="" name="senha" id="txt3">
+                                    </div> 
+                                    
+
+                                <div class="form-group">
+                                    <button type="submit" required class="btn btn-primary btn-block" value="Verificar" onclick="verificar()" > Register  </button>
+                                </div>   
+                            </form>
+                        </article>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <script>
+            function verificar(){
+                var txtv = window.document.querySelector('input#txt1') // var "txtv" pegando informações que usuario digitar no Nome  
+                var txtw = window.document.querySelector('input#txt2')  // var "txtw" pegando informações que usuario digitar na Senha 1 
+                var txtx = window.document.querySelector('input#txt3')  // var "txtx" pegando informações que usuario digitar na Senha 2
+
+                var nome   = (txtv.value)
+                var email = (txtw.value)                            // Transforma  "txtv" em var Nome
+                var senha = (txtx.value)                            // Transforma  "txtw" em var senha1
+                
+            // os input não vai aceitar campos vazios por causa do atributo "required"
+
+                // se nome for menor que 5 caracteres imprime na tela um alerta de  Insira nome correto!!
+                if (nome.length < 5){                            
+                    alert("Insira um nome Correto!!")
+                    }
+                
+                // se variavel senha for igual a zero imprime na tela um alerta de  Senha não informado!!
+                if (senha.length < 3 ){
+                    alert("Senha não informado!")
+                }
+                
+            }
+        </script>
+
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
+

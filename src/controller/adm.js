@@ -79,7 +79,7 @@ exports.getDeslogar = async (req, res, next) => {
 // criar funcionario
 exports.getCriar =  async (req, res, next) => {
     try {
-        return res.send('pagina dos adm');
+        return res.render('registerAdm/_index', {danger: " ", danger2: " "});
     } catch (err) {
         next(err);
     }
@@ -90,11 +90,11 @@ exports.postCriar =  async (req, res, next) => {
        let resultado = await Adm.validarRegistro(req.body);
        if(!resultado){
            let adm = await Adm.criar(req.body);
-           return res.json(adm);
+           console.log(adm)
+           return res.render('registerAdm/_index', {danger: " ", danger2: "registrado com sucesso"});
        } else {
-           return res.json({
-               error: 'adm já foi registrado'
-           });
+        console.log('adm ja existe');
+        return res.render('registerAdm/_index', {danger: "morador já existe",  danger2: " "});
        }
     } catch (err) {
         next(err);

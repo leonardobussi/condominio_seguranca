@@ -46,7 +46,8 @@ exports.postLogar =  async (req, res, next) => {
                 var me  = data.getMonth()
                 var mes = me + 1
                 var ano = data.getFullYear()
-                var hora = data.getHours()
+                var ho = data.getHours()
+                var hora = ho - 3
                 var min = data.getMinutes()
                 var sec = data.getSeconds()
                 var minhaData = {
@@ -121,7 +122,7 @@ exports.postCriar =  async (req, res, next) => {
             
        } else {
            console.log('morador ja existe');
-           return res.render('register/_index', {danger: "morador já existe",  danger2: " "});;
+           return res.render('register/_index', {danger: "morador já existe",  danger2: " "});
        }
     } catch (err) {
         next(err);
