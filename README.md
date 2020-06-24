@@ -120,6 +120,7 @@ Você também verá quaisquer erros no console.
 ##### tela da adminstração
 ![3](https://user-images.githubusercontent.com/54999837/84574954-58798700-ad80-11ea-86a8-35f2ff8ef74f.png)
 ![4](https://user-images.githubusercontent.com/54999837/84574965-5d3e3b00-ad80-11ea-9ceb-1bd06d1cdb11.png)
+![Sem título](https://user-images.githubusercontent.com/54999837/85632314-7af78400-b64d-11ea-800c-c1199003ac0d.png)
 ![5](https://user-images.githubusercontent.com/54999837/84574968-63341c00-ad80-11ea-9b34-0339adbbe423.png)
 
 
