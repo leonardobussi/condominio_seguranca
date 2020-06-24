@@ -79,11 +79,8 @@ Você também verá quaisquer erros no console.
 * criar morador (rota protegida) [http://localhost:3000/adm/criar/](http://localhost:3000/funcionario/criar)
 * load do portao (rota protegida) [http://localhost:3000/up/](http://localhost:3000/up/)
 * painel do adminstrador (rota protegida) [http://localhost:3000/adm/painel/](http://localhost:3000/adm/panel/)
+* criar adminstrador (rota protegida) [http://localhost3000/adm/](http://localhost:3000/adm/)
 
-### As rota que estão sem Front-End  são: <br />
-
-* criar adminstrador [http://localhost3000/adm/criar](http://localhost:3000/adm/criar)
-* lista todos moradores //sem rota 
 
 #### features
 
@@ -111,6 +108,7 @@ Você também verá quaisquer erros no console.
 - [x] registrar a entrada do morador no schema;
 - [x] retornar a mensagem de assalto ao painel do adminstrador pelo schema de logs de entrada;
 - [x] ordernar as mesagem de assalto ao adm no front end (extra);
+- [x] criar a tela de registrar adminstradores;
 - [ ] colocar mensagem em tempo real(websockt.io)
 
 
