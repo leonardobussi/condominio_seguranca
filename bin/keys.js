@@ -5,7 +5,7 @@ module.exports = {
         port: process.env.PORT || 3000,
     },
     database: {
-        connection: 'mongodb+srv://portaria:portaria@cluster0-e2g2g.mongodb.net/teste?retryWrites=true&w=majority' 
+        connection: 'aqui fica a estring de conexao com o mongo' 
     },
     auth: {
         secret: 'c1c2c3c4c5'
