@@ -25,7 +25,7 @@
 * [ ] colocar mensagem em tempo real(websockt.io).
 
 fluxograma do schema:
-
+##### observação: o fluxograma quebrou
 ```mermaid
 graph LR
 
