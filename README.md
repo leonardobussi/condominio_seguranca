@@ -10,7 +10,7 @@
 
 [@leonardobussi](https://github.com/leonardobussi/) | [@Raisler](https://github.com/Raisler) | [@Wiliansantana](https://github.com/Wiliansantana)
 
-## Como utilizar? [ver documentação](#como-utilizar)
+## Como utilizar? [ver documentação](##como-utilizar)
 
 ![condsystem2](https://user-images.githubusercontent.com/54999837/89251865-8b0c6700-d5ee-11ea-8689-ef42efacdd0d.png)
 
@@ -88,7 +88,7 @@ Você também verá quaisquer erros no console.
 - [ ] colocar mensagem em tempo real(websockt.io)
 
 
-# Como usar
+## Como utilizar
 
 1. Navegue até o arquivo **keys.js** na pasta **bin** que está localizada na raiz do projeto.
 	> Nesse arquivo vai ter um objeto database e na string conection adicione a string de conexão com o mongpdb.
