@@ -10,7 +10,7 @@
 
 [@leonardobussi](https://github.com/leonardobussi/) | [@Raisler](https://github.com/Raisler) | [@Wiliansantana](https://github.com/Wiliansantana)
 
-## Como utilizar? [ver documentação](##como-utilizar)
+## Como utilizar? [ver documentação](#como-utilizar)
 
 ![condsystem2](https://user-images.githubusercontent.com/54999837/89251865-8b0c6700-d5ee-11ea-8689-ef42efacdd0d.png)
 
