@@ -1,9 +1,10 @@
-# CondSystem o sistema de segurança de portaria 
+# Sistema de segurança de portaria 
 
 ![Build Status](https://travis-ci.org/condessalovelace/mavenquickstart.svg?branch=master) ![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=br.com%3Amavenquickstart&metric=alert_status)
 
 
-![j](https://media.giphy.com/media/PmEvQTKerJEu9RDert/giphy.gif)
+![condsystem2](https://user-images.githubusercontent.com/54999837/89250341-ef2d2c00-d5ea-11ea-9ed0-72ca63342bb3.png)
+
 
 ## **Etapas**
 
