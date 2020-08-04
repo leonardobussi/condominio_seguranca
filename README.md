@@ -36,7 +36,7 @@
 
 
 
-## **API**
+## **API** [ver documentação](#documentação-da-api)
 
 ### Available Scripts
 
@@ -110,8 +110,7 @@ Você também verá quaisquer erros no console.
 
 # Documentação da API
 
-lorem  kdnknknknksnd sm dskdnks
-sdlsdls 
+> Documentação ainda não pronta 
 
 
 ------------------------------------------------------------------------------
