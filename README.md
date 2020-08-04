@@ -90,7 +90,7 @@ Você também verá quaisquer erros no console.
 
 ## Como utilizar
 1. pré requisito.
-	> Tenha instalado o nodejs >= 10.0 | [windows](https://nodejs.org/en/download/) | [linux - DEB](https://github.com/nodesource/distributions/blob/master/README.md) | [Lista completa](https://nodejs.org/en/download/package-manager/) | [mac](https://nodejs.org/en/) |
+	> Tenha instalado o nodejs >= 10.0 | [Windows](https://nodejs.org/en/download/) | [Linux - DEB](https://github.com/nodesource/distributions/blob/master/README.md) | [Lista completa](https://nodejs.org/en/download/package-manager/) | [Mac os](https://nodejs.org/en/) |
 	
 1. Navegue até o arquivo **keys.js** na pasta **bin** que está localizada na raiz do projeto.
 	> Nesse arquivo vai ter um objeto database e na string conection adicione a string de conexão com o mongpdb.
