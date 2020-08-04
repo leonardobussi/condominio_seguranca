@@ -88,7 +88,31 @@ Você também verá quaisquer erros no console.
 - [ ] colocar mensagem em tempo real(websockt.io)
 
 
+# Como usar
+
+1. Navegue até o arquivo **keys.js** na pasta **bin** que está localizada na raiz do projeto.
+	> Nesse arquivo vai ter um objeto database e na string conection adicione a string de conexão com o mongpdb.
+
+2. Navegue até **adm.js** na pasta  **src/routes/adm.js**.
+	> nesse arquivo vai ter uma rota bloqueada, e essa rota é usada para criar o administrador, mas para criar o administrador você devera remover o middleware de autenticação da forma que está descrito a baixo.
+		
+	- Remova o **auth.autorizar** 
+	`router.get('/', auth.autorizar, Adm.getCriar);`
+	- Essa linha tem que ficar assim.
+	`router.get('/', Adm.getCriar);`
+
+3. Inicie o projeto rodando o comando `npm run roda` ou `yarn roda` e acesse a rota [http://localhost3000/adm/](http://localhost3000/adm/)
+	> Registre um adminstrador, após registrar adicione novamente **auth.autorizar**.
+	- Para ficar desse jeito.
+	`router.get('/', auth.autorizar, Adm.getCriar);`
+
+4. para acessar o painel de controle que esta na rota [http://localhost:3000/adm/painel/](http://localhost:3000/adm/painel/) basta logar usando as credenciais que foi criado. 
+
+# Documentação da API
+
+lorem  kdnknknknksnd sm dskdnks
+sdlsdls 
 
 
-
+------------------------------------------------------------------------------
 ###### Leonardo B. Bussi © - 2020 [licença MIT](https://raw.githubusercontent.com/leonardobussi/condsystem/master/LICENSE)
