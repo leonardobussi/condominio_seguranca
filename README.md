@@ -32,7 +32,7 @@
 * [x] implementação (notify messenger adm), painel do administrador, bloquear rotas e concerta o os front-end (12/06/2020);
 * [x] Deploy da Aplicação (12/06/2020);
 * [x] ordernar as mesagem de assalto ao adm no front end (12/06/2020);
-* [ ] colocar mensagem em tempo real(websockt.io).
+* [ ] colocar mensagem em tempo real(websockt).
 
 
 
@@ -85,11 +85,13 @@ Você também verá quaisquer erros no console.
 - [x] retornar a mensagem de assalto ao painel do adminstrador pelo schema de logs de entrada;
 - [x] ordernar as mesagem de assalto ao adm no front end (extra);
 - [x] criar a tela de registrar adminstradores;
-- [ ] colocar mensagem em tempo real(websockt.io)
+- [ ] colocar mensagem em tempo real(websockt)
 
 
 ## Como utilizar
-
+1. pré requisito.
+	> Tenha instalado o nodejs e npm [dowload](https://nodejs.org/en/)
+	
 1. Navegue até o arquivo **keys.js** na pasta **bin** que está localizada na raiz do projeto.
 	> Nesse arquivo vai ter um objeto database e na string conection adicione a string de conexão com o mongpdb.
 
