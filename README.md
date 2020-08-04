@@ -9,7 +9,7 @@
 ![wil1](https://user-images.githubusercontent.com/54999837/89251038-762ed400-d5ec-11ea-89f5-ecca4759b938.jpeg)
 
 [@leonardobussi](https://github.com/leonardobussi/) | [@Raisler](https://github.com/leonardobussi/) | [@Wiliansantana](https://github.com/leonardobussi/)
-------------------------------------------------------------
+
 
 ![condsystem2](https://user-images.githubusercontent.com/54999837/89250341-ef2d2c00-d5ea-11ea-9ed0-72ca63342bb3.png)
 
@@ -87,16 +87,7 @@ Você também verá quaisquer erros no console.
 - [ ] colocar mensagem em tempo real(websockt.io)
 
 
-### telas
 
-##### tela do Morador (portaria)
-![1](https://user-images.githubusercontent.com/54999837/84574946-4e578880-ad80-11ea-88e1-ea6994dacf90.png)
-![2](https://user-images.githubusercontent.com/54999837/84574949-53b4d300-ad80-11ea-9dfb-f4eeeae2a82c.png)
-##### tela da adminstração
-![3](https://user-images.githubusercontent.com/54999837/84574954-58798700-ad80-11ea-86a8-35f2ff8ef74f.png)
-![4](https://user-images.githubusercontent.com/54999837/84574965-5d3e3b00-ad80-11ea-9ceb-1bd06d1cdb11.png)
-![Sem título](https://user-images.githubusercontent.com/54999837/85632314-7af78400-b64d-11ea-800c-c1199003ac0d.png)
-![5](https://user-images.githubusercontent.com/54999837/84574968-63341c00-ad80-11ea-9b34-0339adbbe423.png)
 
 
 ###### Leonardo B. Bussi © - 2020 [licença MIT](https://raw.githubusercontent.com/leonardobussi/condsystem/master/LICENSE)
