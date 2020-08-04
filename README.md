@@ -25,41 +25,7 @@
 * [x] ordernar as mesagem de assalto ao adm no front end (12/06/2020);
 * [ ] colocar mensagem em tempo real(websockt.io).
 
-fluxograma do schema:
-##### observação: o fluxograma quebrou
-```mermaid
-graph LR
 
-
-Adm[Administrador]
-
-
-Adm --> A((nome))
-Adm --> B((email))
-Adm --> C((senha))
-
-en[EntradaDoMorador]
-
-en --> K
-en --> J((data))
-
-en --> Mora
-
-Mora[Morador]
-Mora --> G((senha2))
-Mora --> E((nickname))
-Mora --> F((senha1))
-Mora -->  K((nome))
-
-Mora --> Ca
-
-Ca[Casa]
-Ca --> H((bloco))
-Ca --> I((numero))
-
-
-
-```
 
 ## **API**
 
