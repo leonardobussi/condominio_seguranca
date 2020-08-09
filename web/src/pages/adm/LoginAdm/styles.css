@@ -1,0 +1,13 @@
+.logo {
+    margin-top: 5px;
+    text-align: center;
+}
+.logo i {
+    color:deeppink
+}
+.logo span {
+    color: grey;
+}
+.card{
+    top: 20px;
+}
