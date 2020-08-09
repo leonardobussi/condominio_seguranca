@@ -32,7 +32,7 @@ function LoginAdm() {
 
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-block" value="Verificar" onclick="verificar()"> Entrar  </button>
-                                <Link to="/painel" class="btn btn-secondary btn-block" > Ir painel  </Link>
+                                <Link to="/adm/painel" class="btn btn-secondary btn-block" > Ir painel  </Link>
                             </div> 
 
                         </form> 
