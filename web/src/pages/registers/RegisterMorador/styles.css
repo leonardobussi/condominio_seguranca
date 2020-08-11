@@ -21,7 +21,6 @@ form {
     height: 100%;
     width: 100%;
     padding: 10px;
-    flex: 1;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.247)!important;
 }
 form h3 {
@@ -45,6 +44,7 @@ input {
     background-color: #eee;
     font-size: 16px;
 }
+
 .input{
     margin-bottom: 20px;
 }
@@ -64,7 +64,20 @@ button {
 button:hover {
     opacity: 0.6;
 }
-
+.senhas::before{
+    content: '';
+	display: block;
+	border-bottom: 3px solid rgba(175, 175, 175, 0.445);
+    padding-top: .5rem;
+    margin: 10px 0;
+}
+.senhas::after {
+    content: '';
+	display: block;
+	border-bottom: 3px solid rgba(175, 175, 175, 0.445);
+    padding-top: .5rem;
+    margin: 10px 0;
+}
 @media (max-width: 683px){
     .container{
         margin-right: 20px;

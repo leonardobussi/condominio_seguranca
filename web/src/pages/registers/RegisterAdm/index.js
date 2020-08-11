@@ -2,7 +2,7 @@ import React from "react"
 import './styles.css'
 
 
-function Home() {
+function RegisterAdm() {
 
     return (
        <>
@@ -15,14 +15,24 @@ function Home() {
             <div className="container ">
                    
                     <form method="POST" enctype="application/x-www-form-urlencoded">
-                        <h3>Sign in</h3>
-                        <label>Nome de usúario <strong>*</strong></label>
+                        <h3>Register</h3>
+                        <label>Nome <strong>*</strong></label>
                         <input  
-                            type="text" 
+                            type="text"  
                             className="input" 
-                            name="nickname" 
+                            name="nome" 
                             required
-                            placeholder="digite seu username"
+                            placeholder="digite seu nome completo"
+                            autocomplete="off"
+                        />
+
+                        <label>E-mail <strong>*</strong></label>
+                        <input  
+                            type="email" 
+                            className="input" 
+                            name="email" 
+                            required
+                            placeholder="digite seu email"
                             autocomplete="off"
                         />
 
@@ -43,4 +53,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default RegisterAdm;
