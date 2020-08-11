@@ -22,7 +22,7 @@ body {
     margin-top: 50px;
     padding: 0 30%;
 }
-.card {
+.card2 {
     padding: 5px 0 0 0;
     height: 400px;
     width: 100%;
@@ -32,7 +32,7 @@ body {
     background-color: #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
-.card h1 {
+.card2 h1 {
     font-size: 50px;
     text-align: center;
     color: rgb(75, 75, 75);
@@ -97,10 +97,10 @@ body {
     .logo p {
         font-size: 10px;
     }  
-    .card h1 {
+    .card2 h1 {
         font-size: 16px;
     }
-    .card{
+    .card2{
         height: 200px;
     }
     .contador {

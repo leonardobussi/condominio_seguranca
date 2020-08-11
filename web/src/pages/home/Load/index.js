@@ -11,7 +11,7 @@ function Load() {
             </div>
 
             <div className="conteiner">
-                <div className="card">
+                <div className="card2">
                     <h1>Seja Bem vindo</h1>
                     <div id="tempo" className="contador">
                         {text}
