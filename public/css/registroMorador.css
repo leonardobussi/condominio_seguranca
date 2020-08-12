@@ -1,0 +1,159 @@
+header a {
+    margin-left: 30px;
+    cursor: pointer;
+}
+header a:hover {
+    color:  rgb(255, 0, 0);
+}
+header span {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+ header span i {
+   color: rgb(255, 0, 0);
+ }
+ .alerta {
+     flex: 1;
+     margin-top: 30px;
+    padding: 0 20%;
+}
+.alert1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 148, 148);
+    padding: 0 5px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.alert2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(58, 241, 202);
+    padding: 0 5px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin-top: 40px;
+    padding: 0 20%;
+}
+form {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.247)!important;
+}
+form h3 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+label{
+    font-weight: 600;
+    font-size: 20px;
+}
+label strong {
+    color: darkred;
+    font-size: 22px;
+}
+input {
+    padding: 5px 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #eee;
+    font-size: 16px;
+}
+
+.input{
+    margin-bottom: 20px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+}
+button {
+    margin: 30px 0;
+    border: 0;
+    color: #fff;
+    background-color: rgb(68, 248, 203);
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease-in-out;
+}
+button:hover {
+    opacity: 0.6;
+}
+
+.names {
+    flex: 1;
+    display: inline-flex;
+    padding: 0 100px;
+    gap: 30px;
+}
+.name1 {
+    width: 120%;
+}
+.senhas {
+    flex: 1;
+    display: inline-flex;
+    padding: 0 100px;
+    gap: 30px;
+}
+
+.casas {
+    display: flex;
+    padding: 0 100px;
+    gap: 100px;
+    justify-content: space-between;
+
+}
+.casa1{
+    width: 20%;
+}
+.casa2 {
+    width: 20%;
+}
+@media (max-width: 660px){
+    .container {
+       padding: 0 10%;
+    }
+    input {
+        padding: 5px 10px;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: 0;
+        background-color: #eee;
+        font-size: 16px;
+    }
+    /* .senhas::before{
+        content: '';
+        display: block;
+        border-bottom: 3px solid rgba(175, 175, 175, 0.445);
+        padding-top: .5rem;
+        margin: 10px 0;
+    }
+    .senhas::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid rgba(175, 175, 175, 0.445);
+        padding-top: .5rem;
+        margin: 10px 0;
+    } */
+}

@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(102, 156, 255);
+    position: fixed;
+    z-index: 999;
+  
+  }
+  header h3 {
+    margin: 15px 0 0 30px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+ header h3 i {
+   color: rgb(255, 0, 0);
+ }
+header nav {
+    margin-top: auto;
+}
+ nav ul {
+  margin-bottom: 10px;
+ }
+ nav ul li {
+  display: inline;
+  margin-right: 30px;
+ }
+ nav ul li a {
+   color: #fff;
+   text-decoration: none;
+    font-size: 14px;
+ }
+nav ul li a:hover {
+  color: crimson;  
+  text-decoration: none; 
+ }
+.conteiner{
+   padding: 0 30%;
+ }
+.ocorrencia {
+   margin: 80px 0 10px 0;
+ }
+.ocorrencia h1 {
+   text-align: center;
+   margin-bottom: 40px;
+ }
+.card {
+   width: 95% ;
+   height: 90px;
+   padding: 10px;
+   background-color: rgb(30, 238, 151);
+   margin: 5px 0;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+   border: 2px solid rgba(0,0,0,.125);
+   border-radius: .25rem;
+ }
+ .card h3 {
+   font-weight: 600;
+   font-size: 25px;
+   margin-bottom: 5px;
+   color: #000;
+ }
+ .card span {
+   font-size: 20px;
+   color: rgb(110, 109, 109);
+ }
+ @media screen and (max-width: 783px) {
+  .conteiner{
+   padding: 0 10%;
+ }   
+ header {
+   height: 90px;
+ } 
+ nav {
+   margin-top: 20px;
+   float: left;
+ }
+ nav ul {
+  margin-top: 0;
+  flex: 1;
+  margin-right: 10px;
+ }
+ .ocorrencia {
+   margin-top: 200px;
+ }
+}
+@media screen and (max-width: 513px) {
+  header {
+    height: 180px;
+  }
+  nav ul li {
+  display: grid;
+ }
+ nav ul li a {
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid rgb(255, 255, 255);
+   color: #fff;
+   text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+ }
+nav ul li a:hover {
+  opacity: 0.6; 
+  color: #fff; 
+ }
+ .card h3 {
+   font-size: 20px;
+   color: #000;
+ }
+ .card span {
+   font-size: 12px;
+   color: rgb(224, 224, 224);
+ }
+ .ocorrencia h1 {
+   font-size: 22px;
+ }
+}
