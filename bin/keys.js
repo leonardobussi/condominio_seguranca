@@ -2,7 +2,7 @@
 
 module.exports = {
     server: {
-        port: process.env.PORT || 3010,
+        port: process.env.PORT || 3000,
     },
     database: {
         connection: 'aqui fica a string de conexao com o mongo' 
