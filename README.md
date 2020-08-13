@@ -3,7 +3,8 @@
 ![Build Status](https://travis-ci.org/condessalovelace/mavenquickstart.svg?branch=master) ![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=br.com%3Amavenquickstart&metric=alert_status)
 - [Como utilizar](#como-utilizar)
 - [Documentaçaõ da API](#api)
-- [Etapas e features]()
+- [Etapas](#etapas)
+- [Feature](#features)
 ------------------------------------------------------------
 
 
