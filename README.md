@@ -9,7 +9,7 @@
 
 
 
-![condsystem2](https://user-images.githubusercontent.com/54999837/89251865-8b0c6700-d5ee-11ea-8689-ef42efacdd0d.png)
+![pronto](https://user-images.githubusercontent.com/54999837/90171766-5c258c00-dd78-11ea-93d7-a6ff6494a601.png)
 
 
 ## **Etapas**
