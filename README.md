@@ -1,11 +1,12 @@
 # Sistema de segurança de portaria 
 
 ![Build Status](https://travis-ci.org/condessalovelace/mavenquickstart.svg?branch=master) ![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=br.com%3Amavenquickstart&metric=alert_status)
-
+- [Como utilizar](#como-utilizar)
+- [Documentaçaõ da API](#api)
+- [Etapas e features]()
 ------------------------------------------------------------
-[@leonardobussi](https://github.com/leonardobussi/) | [@Raisler](https://github.com/Raisler) | [@Wiliansantana](https://github.com/Wiliansantana)
 
-## Como utilizar? [ver documentação](#como-utilizar)
+
 
 ![condsystem2](https://user-images.githubusercontent.com/54999837/89251865-8b0c6700-d5ee-11ea-8689-ef42efacdd0d.png)
 
@@ -28,30 +29,6 @@
 * [x] Deploy da Aplicação (12/06/2020);
 * [x] ordernar as mesagem de assalto ao adm no front end (12/06/2020);
 * [ ] colocar mensagem em tempo real(websockt).
-
-
-
-## **API** [ver documentação](#documentação-da-api)
-
-### Available Scripts
-
-No diretório do projeto, você pode executar:
-
-* `yarn roda` ou `npm run roda`
-
-Executa o aplicativo no modo de desenvolvimento.<br />
-Abrir para visualizá-lo no navegador.
-
-A página será recarregada se você fizer edições. <br />
-Você também verá quaisquer erros no console.
-
-* logar morador(portaria) [http://localhost:3000/](http://localhost:3000/)
-* logar adminstrador [http://localhost:3000/adm/logar/](http://localhost:3000/funcionario/logar)
-* criar morador (rota protegida) [http://localhost:3000/adm/criar/](http://localhost:3000/funcionario/criar)
-* load do portao (rota protegida) [http://localhost:3000/up/](http://localhost:3000/up/)
-* painel do adminstrador (rota protegida) [http://localhost:3000/adm/painel/](http://localhost:3000/adm/panel/)
-* criar adminstrador (rota protegida) [http://localhost3000/adm/](http://localhost:3000/adm/)
-
 
 #### features
 
@@ -105,9 +82,29 @@ Você também verá quaisquer erros no console.
 
 4. para acessar o painel de controle que esta na rota [http://localhost:3000/adm/painel/](http://localhost:3000/adm/painel/) basta logar usando as credenciais que foi criado. 
 
-# Documentação da API
 
-> Documentação ainda não pronta 
+## **API**
+
+### Available Scripts
+
+No diretório do projeto, você pode executar:
+
+* `yarn roda` ou `npm run roda`
+
+Executa o aplicativo no modo de desenvolvimento.<br />
+Abrir para visualizá-lo no navegador.
+
+A página será recarregada se você fizer edições. <br />
+Você também verá quaisquer erros no console.
+
+* logar morador(portaria) [http://localhost:3000/](http://localhost:3000/)
+* logar adminstrador [http://localhost:3000/adm/logar/](http://localhost:3000/funcionario/logar)
+* criar morador (rota protegida) [http://localhost:3000/adm/criar/](http://localhost:3000/funcionario/criar)
+* load do portao (rota protegida) [http://localhost:3000/up/](http://localhost:3000/up/)
+* painel do adminstrador (rota protegida) [http://localhost:3000/adm/painel/](http://localhost:3000/adm/panel/)
+* criar adminstrador (rota protegida) [http://localhost3000/adm/](http://localhost:3000/adm/)
+
+
 
 
 ------------------------------------------------------------------------------
