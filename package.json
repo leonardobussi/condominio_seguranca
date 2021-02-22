@@ -22,6 +22,7 @@
     "socket.io": "^2.4.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "mquery": "^3.2.4"
   }
 }
