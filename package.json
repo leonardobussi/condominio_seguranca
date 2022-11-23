@@ -19,7 +19,7 @@
     "localtoken": "^0.1.2",
     "mongoose": "^5.9.7",
     "simple-mongoose-creator": "0.0.1",
-    "socket.io": "^2.4.0"
+    "socket.io": "^2.5.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4",
