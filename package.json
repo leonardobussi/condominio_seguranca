@@ -14,7 +14,7 @@
     "bcrypt": "5.0.1",
     "body-parser": "^1.19.0",
     "ejs": "^3.0.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
     "localtoken": "^0.1.2",
     "mongoose": "^5.9.7",
